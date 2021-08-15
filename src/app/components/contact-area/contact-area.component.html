@@ -1,0 +1,8 @@
+<div class="d-flex justify-content-center">
+  <div class="d-flex" *ngFor="let property of properties">
+    <i [ngStyle]="{'color':property.icon_color, 'font-size': property.icon_size + 'px'} " [className]="'px-2 fa '+ property.icon"
+    style="font-size: 40px; align-items: center;" tooltip="{{property.icon_text}}"></i>
+    <a *ngIf="property.link" class="text-white" style="margin: auto 0;" target="_blank" href="{{property.link}}">{{property.text}}</a>
+    <span *ngIf="property.text" class="text-white" style="margin: auto 0;">{{property.text}}</span>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="category-item">
+  <h5 [ngStyle]="{'color': this.card.title.color}" data-toggle="collapse" aria-expanded="true">
+      <div class="circle" [ngStyle]="{'background': 'radial-gradient(circle closest-side,'+this.card.title.background_color+', 0%,'+this.card.title.background_color+' 98%,rgba(0,0,0,0) 100%)'}">
+          <i [className]="'fa '+this.card.icon.icon+' fa-'+this.card.icon.width+'x '"></i>
+      </div>
+      {{this.card.title.text}}
+  </h5>
+  <hr [ngStyle]="{'border': '1px solid '+this.card.title.background_color}">
+  <!-- <div [ngStyle]="{'text-align': this.card.description.align}"> -->
+  <div class="text-center">
+      <p [ngStyle]="{'color': this.card.description.color}">{{this.card.description.text}}</p>
+  </div>
+  <ng-content></ng-content>
+</div>

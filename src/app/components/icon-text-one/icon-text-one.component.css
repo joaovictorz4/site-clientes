@@ -1,0 +1,19 @@
+.item{
+  display: flex;
+  margin: 20px 0;
+  float: right;
+  align-items: center;
+  min-width:320px;
+}
+.item span{
+  align-self: center;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.item{
+  width: fit-content;
+  float: none !important;
+  padding-bottom: 20px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

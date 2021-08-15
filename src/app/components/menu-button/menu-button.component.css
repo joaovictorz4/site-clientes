@@ -1,0 +1,22 @@
+
+.card.menu-item{
+  height: 50px; width: 50px; margin: auto; margin-bottom: 10px; align-items: center;
+}
+
+.card.menu-item .card-body{
+  display: flex; align-items: center;
+}
+
+.card.menu-item i{
+  color: white; font-size: 30px;
+}
+
+.menu-item:hover{
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.card .menu-item .card-body{
+  display: flex; align-items: center;
+}
+

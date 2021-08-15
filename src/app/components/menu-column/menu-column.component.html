@@ -1,0 +1,9 @@
+<div class="col category-item">
+  <h5 [ngStyle]="{'color': this.column.title_color}" data-toggle="collapse"
+      aria-expanded="true" href="#collapse-item3">
+      {{column.title}}</h5>
+  <hr class="hr-bar" [ngStyle]="{'border-color': this.column.title_color}" >
+  <div class="collapse show" id="collapse-item3" style="text-align:center;">
+    <ng-content></ng-content>
+  </div>
+</div>

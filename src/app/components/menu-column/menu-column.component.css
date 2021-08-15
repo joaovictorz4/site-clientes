@@ -1,0 +1,15 @@
+.category-item h5{
+  text-align: center;
+  padding: 5px 15px;
+}
+
+.hr-bar{
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 1024px) {
+  .category-item{
+    text-align:center;
+    padding: 15px 5px;
+  }
+}

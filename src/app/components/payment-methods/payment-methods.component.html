@@ -1,0 +1,5 @@
+<div class="flex">
+  <div *ngFor="let payment of payment_methods">
+    <img class="money" alt="Dinheiro" tooltip="{{payment.tool_tip}}" [src]="payment.icon">
+  </div>
+</div>

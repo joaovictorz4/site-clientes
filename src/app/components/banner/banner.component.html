@@ -1,0 +1,9 @@
+<div  class="banner border-0"
+  [ngStyle]="{
+    'background-image': + this.banner.has_shadow == 1
+  ? 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(' + this.banner.img + ')'
+  : 'url(' + this.banner.img + ')' }">
+  <p class="title"
+  [ngStyle]="{'color':this.banner.text_color}" >{{this.banner.text}}</p>
+  <button-one style="margin: 10px auto; margin-bottom: 20px;" [button]="this.banner"></button-one>
+</div>

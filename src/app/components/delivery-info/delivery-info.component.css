@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1024px) {
+  .bike img{
+    float: none !important;
+    display: flex;
+    margin: auto !important;
+    left: -15px;
+  }
+}
+.container-2{
+  padding: 70px 0;
+}

@@ -1,0 +1,19 @@
+.menu-item{
+  height: 50px; width: 50px; margin: auto; margin-bottom: 5px; align-items: center;
+}
+
+.menu-item .card-body{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.menu-item:hover{
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -1,0 +1,61 @@
+.flex-wrap-center{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.store-info .item{
+  margin: 20px;
+  float: right;
+  align-items: center;
+  width: 320px;
+}
+
+.store-info{
+  margin: 50px auto;
+}
+
+.store-info .item img{
+  width: 45px;
+}
+
+.store-info .item span{
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+}
+
+.img-content img{
+  width: 100%;
+}
+
+.store-info .item{
+  width: fit-content;
+  float: none !important;
+  padding-bottom: 20px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.store-info .bike{
+  margin-top: 50px;
+}
+
+.store-info .bike img{
+  margin: auto !important;
+  left: -15px;
+}
+
+@media only screen and (max-width: 576px) {
+
+  .store-info .item img{
+    width: 35px;
+  }
+
+  .store-info .item span{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+  }
+
+}

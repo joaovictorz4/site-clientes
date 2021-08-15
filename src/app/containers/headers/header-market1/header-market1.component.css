@@ -1,0 +1,22 @@
+.nav-item{
+  text-decoration: none;
+}
+
+.nav-link{
+  font-size: 22px;
+  color: #fff !important;
+}
+
+.nav-link i{
+  padding: 5px;
+}
+
+.display-mobile{
+
+}
+
+@media (min-width: 991px){
+  .navbar-collapse{
+    display: none !important;
+  }
+}

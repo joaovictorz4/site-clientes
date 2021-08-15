@@ -1,0 +1,8 @@
+
+<swiper fxFlex="auto" [config]="config">
+  <ng-template *ngFor="let property of this.properties" swiperSlide>
+    <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+      <category class="cursor-pointer" [category]="property"></category>
+    </div>
+  </ng-template>
+</swiper>

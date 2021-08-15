@@ -1,0 +1,16 @@
+.bar-gray {
+  background-color: rgb(54, 53, 65);
+}
+
+.footer-items{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 991px) {
+  .footer-item{
+    display: flex;
+    justify-content: center;
+  }
+}
+

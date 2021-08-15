@@ -1,0 +1,10 @@
+<div class="container" *ngIf="sections.delivery_icons && sections.delivery_imgs">
+  <div class="container-2 row">
+    <div *ngIf="sections.delivery_icons" class="col-sm-12 col-lg-5">
+        <icon-text-one *ngFor="let property of sections.delivery_icons" [info]="property"></icon-text-one>
+    </div>
+    <div *ngIf="sections.delivery_imgs" class="col-sm-12 col-lg-7 bike d-flex justify-content-center">
+        <img src="{{sections.delivery_imgs.img}}" alt="" style="float: left; max-height: 100%; max-width: 100%;">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="market-container">
+  <div class="store-info">
+    <div class="flex-wrap-center">
+        <div>
+          <div class="item" *ngFor="let item of storeInfo.item">
+            <img [src]="item.icon" alt="">
+            <span>
+              {{item.text}}
+            </span>
+          </div>
+        </div>
+        <div class="img-content">
+            <img [src]="storeInfo.img" alt="">
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+  <a class="flex">
+    <div class="card menu-item icon" [ngStyle]="{'background-color': button.background_color}">
+      <div class="card-body">
+        <i [ngStyle]="
+        {
+          'color': button.icon_color,
+          'font-size': '32px'
+        }" [className]="'fa '+ button.icon "></i>
+      </div>
+    </div>
+    <span class="pb-1" style="font-size: 12px;" [ngStyle]="{'color': button.text_color}">{{button.text}}</span>
+  </a>

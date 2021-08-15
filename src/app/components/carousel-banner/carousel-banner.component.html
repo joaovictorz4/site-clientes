@@ -1,0 +1,10 @@
+
+<div class="w-100">
+  <swiper fxFlex="auto" [config]="config">
+    <ng-template *ngFor="let property of properties" swiperSlide>
+      <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+        <banner [banner]="property"></banner>
+      </div>
+    </ng-template>
+  </swiper>
+</div>

@@ -1,0 +1,40 @@
+.swiper-container {
+  margin: 15px 0 auto auto;
+}
+
+.offer-footer{
+  margin-left: 30px;
+}
+
+.info{
+  font-size: 14px;
+  padding-right: 10px;
+  color: rgb(92, 92, 92);
+}
+
+.offer-title{
+  margin-left: 20px;
+}
+
+.offer-title h5{
+  font-size: 32px;
+  margin-bottom: 0;
+  padding-top: 30px;
+}
+
+.offer-title p{
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 599px) {
+  .offer-title{
+    margin-left: 10px !important;
+  }
+
+  .offer-footer{
+    margin-left: 10px !important;
+  }
+}
+
+
+

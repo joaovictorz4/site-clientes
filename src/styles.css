@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'assets/css/bootstrap.min.css';
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
+/* Add application styles & imports to this file! */
+@import "~swiper/swiper-bundle";
+
+.a, .a:hover{
+  text-decoration: none;
+}
+
+.bg-primary-color{
+  background-color: #CD3236;
+}
+
+.primary-color{
+  color: #CD3236;
+}
+
+.third-color{
+  color: #76C8D2;
+  border-color: #76C8D2;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.market-container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}

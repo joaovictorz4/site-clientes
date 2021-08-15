@@ -1,0 +1,40 @@
+<header-market1 *ngIf="this.sections.headers"></header-market1>
+<div class="market-container">
+  <div class="internal-container">
+    <div class="row w-100 mx-0">
+      <div class="col-xl-8 col-lg-8 col-md-12 w-100">
+        <carousel-banner *ngIf="this.sections.banners"></carousel-banner>
+      </div>
+      <div class="display-mobile col-xl-4 col-lg-4 col-md-0">
+        <div>
+          <menu-buttons></menu-buttons>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<container-offers *ngIf="this.sections.offers"></container-offers>
+<div *ngIf="this.sections.categories" class="market-container space">
+  <carousel-categorias></carousel-categorias>
+</div>
+<delivery-info *ngIf="this.sections.delivery_imgs || this.sections.delivery_icons"></delivery-info>
+<div class="py-5" style="background-color: #444349;">
+  <div class="row market-container">
+    <div *ngIf="this.sections.stores" [className]="'col-lg-'+ getColumnSize() +' col-md-6 col-sm-12'">
+      <menu-column [column]="this.columns[0]">
+        <store-info-content class="d-flex" *ngFor="let property of this.sections.stores" [storeInfo]="property"></store-info-content>
+      </menu-column>
+    </div>
+    <div *ngIf="this.sections.categories" [className]="'col-lg-'+ getColumnSize() +' col-md-6 col-sm-12'">
+      <menu-column [column]="this.columns[1]">
+        <p class="text-left pl-3" *ngFor="let property of this.sections.categories"><a class="text-white" href="">{{property.name}}</a></p>
+      </menu-column>
+    </div>
+    <div *ngIf="this.sections.contact_info" [className]="'col-lg-'+ getColumnSize() +' col-md-6 col-sm-12'">
+      <menu-column [column]="this.columns[2]">
+          <contact-area></contact-area>
+      </menu-column>
+    </div>
+  </div>
+</div>
+<convem-footer></convem-footer>

@@ -1,0 +1,18 @@
+.store-name{
+  margin-left: 15px !important;
+  font-size: 20px;
+}
+.sub{
+  font-size: 15px;
+  display: inline-block;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.sub i{
+  margin-right: 8px;
+}
+
+.store-name, .sub, .sub i{
+  color: white;
+  text-align: left;
+}

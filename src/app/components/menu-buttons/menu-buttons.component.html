@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="menu-buttons border-1">
+      <div class="row align-items-start" style="height: 150px; padding-top: 10%;">
+        <div class="col-6 mb-5" *ngFor="let property of properties; let i = index">
+          <button-icon *ngIf=" i < properties.length / 2" [button]="property" ></button-icon>
+          <button-icon *ngIf=" i > (properties.length / 2) - 1" [button]="property" ></button-icon>
+        </div>
+      </div>
+  </div>
+</div>

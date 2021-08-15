@@ -1,0 +1,8 @@
+
+
+::ng-deep .swiper-button-prev,
+::ng-deep .swiper-button-next {
+  color: #CD3236 !important;
+}
+
+
